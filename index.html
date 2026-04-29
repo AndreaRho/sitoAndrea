@@ -1,15 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Igotti Beton | Calcestruzzo di Qualità</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1 class="rosso">Questa scritta è rossa</h1>
-    
-    <h2 class="blu">Questa scritta è blu</h2>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-icon">◼</span>
+        <span class="logo-text">iGotti Beton</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="#chi-siamo">Chi Siamo</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#prodotti">Prodotti</a>
+        <a href="#contatti">Contatti</a>
+        <a href="pag2.html">Progetti</a>
+      </nav>
+    </div>
+  </header>
 
-    <button class="mio-bottone">clicca</button>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Solidità e Affidabilità</h1>
+      <p>Calcestruzzo preconfezionato di alta qualità per qualsiasi tipo di progetto edilizio</p>
+      <a href="#contatti" class="btn">Come Contattarci?</a>
+    </div>
+  </section>
+
+  <!-- Chi Siamo -->
+  <section id="chi-siamo" class="section">
+    <div class="container">
+      <h2>Chi Siamo</h2>
+      <p>Igotti Beton è un'azienda specializzata nella produzione e fornitura di calcestruzzo preconfezionato. Con anni di esperienza nel settore, garantiamo materiali di qualità certificata e un servizio puntuale per cantieri di ogni dimensione.</p>
+      <div class="features">
+        <div class="feature">
+          <h3>Qualità Certificata</h3>
+          <p>Materiali conformi alle normative vigenti</p>
+        </div>
+        <div class="feature">
+          <h3>Consegna Puntuale</h3>
+          <p>Flotta moderna per consegne rapide</p>
+        </div>
+        <div class="feature">
+          <h3>Assistenza Tecnica</h3>
+          <p>Supporto specializzato per ogni esigenza</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servizi -->
+  <section id="servizi" class="section section-alt">
+    <div class="container">
+      <h2>I Nostri Servizi</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Produzione</h3>
+          <p>Impianti moderni per la produzione di calcestruzzo con diverse classi di resistenza e caratteristiche tecniche.</p>
+        </div>
+        <div class="card">
+          <h3>Trasporto</h3>
+          <p>Consegna con autobetoniere direttamente in cantiere, con programmazione flessibile degli orari.</p>
+        </div>
+        <div class="card">
+          <h3>Consulenza</h3>
+          <p>Supporto tecnico per la scelta della miscela più adatta alle specifiche del vostro progetto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prodotti -->
+  <section id="prodotti" class="section">
+    <div class="container">
+      <h2>I Nostri Prodotti</h2>
+      <ul class="product-list">
+        <li>Calcestruzzo strutturale (C25/30 - C50/60)</li>
+        <li>Calcestruzzo per fondazioni</li>
+        <li>Calcestruzzo autocompattante</li>
+        <li>Calcestruzzo fibrorinforzato</li>
+        <li>Calcestruzzo alleggerito</li>
+        <li>Malta e massetti</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- certificazioni -->
+  <section id="servizi" class="section section-alt">
+
+  <div class="contenitore">
+    <div class="cerchio">
+      <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="12" y="8" width="66" height="56" rx="5" fill="#B5D4F4" stroke="#185FA5" stroke-width="2.5"/>
+        <rect x="20" y="20" width="50" height="4" rx="2" fill="#185FA5"/>
+        <rect x="20" y="30" width="38" height="3.5" rx="1.75" fill="#378ADD"/>
+        <rect x="20" y="39" width="28" height="3.5" rx="1.75" fill="#378ADD"/>
+        <circle cx="45" cy="75" r="14" fill="#185FA5" stroke="#B5D4F4" stroke-width="2"/>
+        <polyline points="38,75 43,81 53,68" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <polygon points="33,62 45,58 57,62 57,68 45,72 33,68" fill="none" stroke="#B5D4F4" stroke-width="1.5"/>
+      </svg>
+    </div>
+<button class="bottone" onclick="window.location.href='pagcertificato.html'">Vedi certificato</button>  
+</div>
+
+  </section>
+ 
+  <!-- Contatti -->
+<section id="contatti" class="section section-white">
+  <div class="container">
+    <h2>Contattaci</h2>
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <p><strong>Indirizzo:</strong><br>Via dell'Industria, 00<br>00000 Città (XX)</p>
+        <p><strong>Telefono:</strong><br>+39 000 000 0000</p>
+        <p><strong>Email:</strong><br>info@igottibeton.it</p>
+        <p><strong>Orari:</strong><br>Lun: 7:00 - 18:00<br>Mar: 7:00 - 18:00<br>Mer: 7:00 - 18:00<br>Gio: 7:00 - 18:00<br>Ven: 7:00 - 18:00<br>Sab: 7:00 - 12:00</p>
+      </div>
+
+      <!-- FORM -->
+      <form action="send.php" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Nome e Cognome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefono" placeholder="Telefono">
+        <textarea name="message" placeholder="Messaggio" rows="4" required></textarea>
+        <button type="submit" class="btn">Invia Messaggio</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 iGotti Beton. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- JS FILE 
+  <script src="form.js"></script>
+   JS FILE -->
 
 </body>
 </html>
