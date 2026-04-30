@@ -1,3 +1,10 @@
+/* Reset e Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,14 +30,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  width: 100%;
-  margin: 0;
 }
 
-.header .header-content {
-  max-width: 100%;
-  margin: 0;
-  padding: 0 30px;
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,7 +151,7 @@ body {
 .hero h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  -webkit-text-stroke: 1px #4da6d9;
+  /*-webkit-text-stroke: 1px #4dd96b;*/
 }
 
 .btn-hero.btn-small {
@@ -313,4 +315,9 @@ body {
     font-size: 0.75rem;
     padding: 8px 18px;
   }
+}
+.linea-verticale {
+  border-left: 2px solid rgb(255, 255, 255); 
+  height: 30px;                
+  margin: 0 10px;               
 }

@@ -12,12 +12,12 @@ form.addEventListener("submit", async function(event) {
   // 🔴 CONTROLLI
 
   if (name.length < 3) {
-    status.innerHTML = " Il nome deve avere almeno 3 caratteri";
+    status.innerHTML = "❌ Il nome deve avere almeno 3 caratteri";
     return;
   }
 
   if (!email.includes("@") || !email.includes(".")) {
-    status.innerHTML = " Inserisci una email valida";
+    status.innerHTML = "❌ Inserisci una email valida";
     return;
   }
 
@@ -26,18 +26,18 @@ form.addEventListener("submit", async function(event) {
     const phoneRegex = /^[0-9]+$/; // solo numeri
 
     if (!phoneRegex.test(phone)) {
-      status.innerHTML = " Il telefono deve contenere solo numeri";
+      status.innerHTML = "❌ Il telefono deve contenere solo numeri";
       return;
     }
 
     if (phone.length < 8) {
-      status.innerHTML = " Il numero di telefono è troppo corto";
+      status.innerHTML = "❌ Il numero di telefono è troppo corto";
       return;
     }
   }
 
   if (message.length < 10) {
-    status.innerHTML = " Il messaggio è troppo corto (min 10 caratteri)";
+    status.innerHTML = "❌ Il messaggio è troppo corto (min 10 caratteri)";
     return;
   }
 
@@ -56,12 +56,12 @@ form.addEventListener("submit", async function(event) {
     });
 
     if (response.ok) {
-      status.innerHTML = " Richiesta inviata con successo!";
+      status.innerHTML = "✅ Richiesta inviata con successo!";
       form.reset();
     } else {
-      status.innerHTML = " Errore nell'invio della richiesta.";
+      status.innerHTML = "❌ Errore nell'invio della richiesta.";
     }
   } catch (error) {
-    status.innerHTML = " Errore di rete.";
+    status.innerHTML = "❌ Errore di rete.";
   }
 });

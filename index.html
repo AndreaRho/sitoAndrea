@@ -17,10 +17,12 @@
       </div>
       <nav class="nav">
         <a href="index.html">Home</a>
+          <div class="linea-verticale"></div>
         <a href="#chi-siamo">Chi Siamo</a>
         <a href="#servizi">Servizi</a>
         <a href="#prodotti">Prodotti</a>
         <a href="#contatti">Contatti</a>
+          <div class="linea-verticale"></div>
         <a href="pag2.html">Progetti</a>
       </nav>
     </div>
@@ -31,7 +33,7 @@
     <div class="container hero-content">
       <h1>Solidità e Affidabilità</h1>
       <p>Calcestruzzo preconfezionato di alta qualità per qualsiasi tipo di progetto edilizio</p>
-      <a href="#contatti" class="btn">Come Contattarci?</a>
+      <a href="#contatti" class="btn">Richiedi Preventivo</a>
     </div>
   </section>
 
@@ -108,36 +110,37 @@
         <polygon points="33,62 45,58 57,62 57,68 45,72 33,68" fill="none" stroke="#B5D4F4" stroke-width="1.5"/>
       </svg>
     </div>
-<button class="bottone" onclick="window.location.href='pagcertificato.html'">Vedi certificato</button>  
-</div>
-
-  </section>
- 
-  <!-- Contatti -->
-<section id="contatti" class="section section-white">
-  <div class="container">
-    <h2>Contattaci</h2>
-    <div class="contact-grid">
-
-      <div class="contact-info">
-        <p><strong>Indirizzo:</strong><br>Via dell'Industria, 00<br>00000 Città (XX)</p>
-        <p><strong>Telefono:</strong><br>+39 000 000 0000</p>
-        <p><strong>Email:</strong><br>info@igottibeton.it</p>
-        <p><strong>Orari:</strong><br>Lun: 7:00 - 18:00<br>Mar: 7:00 - 18:00<br>Mer: 7:00 - 18:00<br>Gio: 7:00 - 18:00<br>Ven: 7:00 - 18:00<br>Sab: 7:00 - 12:00</p>
-      </div>
-
-      <!-- FORM -->
-      <form action="send.php" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Nome e Cognome" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="telefono" placeholder="Telefono">
-        <textarea name="message" placeholder="Messaggio" rows="4" required></textarea>
-        <button type="submit" class="btn">Invia Messaggio</button>
-      </form>
-
-    </div>
+    <a href="pagcertificato.html"><button class="bottone">Scarica certificato</button>  </a>
   </div>
-</section>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti" class="section section-white">
+    <div class="container">
+      <h2>Contattaci</h2>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <p><strong>Indirizzo:</strong><br>Via dell'Industria, 00<br>00000 Città (XX)</p>
+          <p><strong>Telefono:</strong><br>+39 000 000 0000</p>
+          <p><strong>Email:</strong><br>info@igottibeton.it</p>
+          <p><strong>Orari:</strong><br>Lun: 7:00 - 18:00<br>Mar: 7:00 - 18:00<br>Mer: 7:00 - 18:00<br>Gio: 7:00 - 18:00<br>Ven: 7:00 - 18:00<br>Sab: 7:00 - 12:00</p>
+        </div>
+
+        <!-- FORM FUNZIONANTE -->
+        <form id="contact-form" action="https://formspree.io/f/meevdvyz" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Nome e Cognome" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="telefono" placeholder="Telefono">
+          <textarea name="message" placeholder="Messaggio" rows="4" required></textarea>
+          <button type="submit" class="btn">Invia Messaggio</button>
+        </form>
+
+        <p id="form-status"></p>
+
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -146,9 +149,8 @@
     </div>
   </footer>
 
-  <!-- JS FILE 
+  <!-- JS FILE -->
   <script src="form.js"></script>
-   JS FILE -->
 
 </body>
 </html>
