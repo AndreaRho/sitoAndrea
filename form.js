@@ -9,40 +9,40 @@ form.addEventListener("submit", async function(event) {
   const phone = form.telefono.value.trim();
   const message = form.message.value.trim();
 
-  // 🔴 CONTROLLI
+  //  CONTROLLI
 
   if (name.length < 3) {
-    status.innerHTML = "❌ Il nome deve avere almeno 3 caratteri";
+    status.innerHTML = " Il nome deve avere almeno 3 caratteri";
     return;
   }
 
   if (!email.includes("@") || !email.includes(".")) {
-    status.innerHTML = "❌ Inserisci una email valida";
+    status.innerHTML = " Inserisci una email valida";
     return;
   }
 
-  // 📞 CONTROLLO TELEFONO
+  //  CONTROLLO TELEFONO
   if (phone !== "") {
-    const phoneRegex = /^[0-9]+$/; // solo numeri
+    const phoneRegex = /^[0-9]+$/; // solo numeri (regular expression)
 
     if (!phoneRegex.test(phone)) {
-      status.innerHTML = "❌ Il telefono deve contenere solo numeri";
+      status.innerHTML = " Il telefono deve contenere solo numeri";
       return;
     }
 
     if (phone.length < 8) {
-      status.innerHTML = "❌ Il numero di telefono è troppo corto";
+      status.innerHTML = " Il numero di telefono è troppo corto"; //inner=inserisce nel js un pezzo html
       return;
     }
   }
 
   if (message.length < 10) {
-    status.innerHTML = "❌ Il messaggio è troppo corto (min 10 caratteri)";
+    status.innerHTML = " Il messaggio è troppo corto (min 10 caratteri)";
     return;
   }
 
-  // 🟡 INVIO
-  status.innerHTML = "⏳ Invio in corso...";
+  //  INVIO
+  status.innerHTML = " Invio in corso...";
 
   const data = new FormData(form);
 
@@ -56,12 +56,12 @@ form.addEventListener("submit", async function(event) {
     });
 
     if (response.ok) {
-      status.innerHTML = "✅ Richiesta inviata con successo!";
+      status.innerHTML = " Richiesta inviata con successo!";
       form.reset();
     } else {
-      status.innerHTML = "❌ Errore nell'invio della richiesta.";
+      status.innerHTML = " Errore nell'invio della richiesta.";
     }
   } catch (error) {
-    status.innerHTML = "❌ Errore di rete.";
+    status.innerHTML = "Errore di rete.";
   }
 });
